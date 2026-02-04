@@ -1,0 +1,82 @@
+[
+  {
+    "id": 1,
+    "role": "Senior Frontend Engineer",
+    "pay_per_hour": 85,
+    "location": "Remote (US/Canada)",
+    "tech_stack": ["React", "TypeScript", "Tailwind CSS", "Next.js"],
+    "details": "Lead the development of our core SaaS dashboard. Focus on performance optimization and building reusable component libraries."
+  },
+  {
+    "id": 2,
+    "role": "Backend Systems Developer",
+    "pay_per_hour": 75,
+    "location": "Hybrid - Austin, TX",
+    "tech_stack": ["Go", "PostgreSQL", "Docker", "gRPC"],
+    "details": "Scaling high-throughput microservices. Responsible for database schema design and implementing robust API security protocols."
+  },
+  {
+    "id": 3,
+    "role": "Mobile App Developer",
+    "pay_per_hour": 70,
+    "location": "Remote - UK",
+    "tech_stack": ["React Native", "Firebase", "Redux", "Node.js"],
+    "details": "Build and maintain cross-platform mobile applications for a growing fintech startup. Integrate biometric auth and real-time notifications."
+  },
+  {
+    "id": 4,
+    "role": "DevOps Architect",
+    "pay_per_hour": 95,
+    "location": "On-site - New York, NY",
+    "tech_stack": ["AWS", "Terraform", "Kubernetes", "Jenkins"],
+    "details": "Design and manage CI/CD pipelines and cloud infrastructure. Focus on automated scaling and disaster recovery strategies."
+  },
+  {
+    "id": 5,
+    "role": "Full Stack Developer",
+    "pay_per_hour": 65,
+    "location": "Remote - Europe",
+    "tech_stack": ["Vue.js", "Python", "Django", "Redis"],
+    "details": "Developing end-to-end features for an e-commerce platform. Managing both frontend state and backend business logic."
+  },
+  {
+    "id": 6,
+    "role": "Data Engineer",
+    "pay_per_hour": 80,
+    "location": "Hybrid - San Francisco, CA",
+    "tech_stack": ["Python", "Apache Spark", "Snowflake", "Airflow"],
+    "details": "Constructing large-scale data pipelines. Optimizing ETL processes to provide clean datasets for the ML research team."
+  },
+  {
+    "id": 7,
+    "role": "UI/UX Engineer",
+    "pay_per_hour": 60,
+    "location": "Remote - Global",
+    "tech_stack": ["Figma", "React", "CSS3", "Framer Motion"],
+    "details": "Bridging the gap between design and code. Creating high-fidelity interactive prototypes and implementing complex animations."
+  },
+  {
+    "id": 8,
+    "role": "Cybersecurity Analyst",
+    "pay_per_hour": 90,
+    "location": "On-site - Washington D.C.",
+    "tech_stack": ["Splunk", "Wireshark", "Python", "Linux"],
+    "details": "Monitoring network traffic for security breaches. Conducting penetration tests and ensuring compliance with federal standards."
+  },
+  {
+    "id": 9,
+    "role": "AI/ML Integrator",
+    "pay_per_hour": 110,
+    "location": "Remote - US Only",
+    "tech_stack": ["PyTorch", "OpenAI API", "Node.js", "Pinecone"],
+    "details": "Integrating Large Language Models into existing business workflows. Developing RAG (Retrieval-Augmented Generation) systems."
+  },
+  {
+    "id": 10,
+    "role": "QA Automation Engineer",
+    "pay_per_hour": 55,
+    "location": "Hybrid - Toronto, ON",
+    "tech_stack": ["Playwright", "Jest", "GitHub Actions", "Selenium"],
+    "details": "Developing automated test suites to ensure software reliability. Working closely with devs to identify bugs before deployment."
+  }
+]
