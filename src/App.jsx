@@ -1,30 +1,24 @@
-import Hero from "./components/Hero";
-import HomeCard from "./components/HomeCard";
-import JobList from "./components/JobListing";
-import ViewAllJobs from "./components/ViewAllJobs";
 
-const App = () =>{
-  // const names = ["moni", "lade", "Arom"]
-  // const isLoggedIn = true
-  return (
-<>
-<div className="m-10">
-<Hero title= "The Becoming" sub="Becoming a world Developer"/>
-<Hero/>
-<HomeCard/>
-<JobList/>
-<ViewAllJobs/>
-</div>
-{/* <ul>
-  {names.map((e,i)=>(
-  <li key={i} style={{}}>{i} {e}</li>
-  ))}
-</ul>
-<div>{isLoggedIn ? <h1>Hey User</h1> : <h1>Please log in</h1>}</div> */}
-
-</>
+import {createBrowserRouter, createRoutesFromElements, Route,RouterProvider} from "react-router-dom"
+import Homepage from "./pages/HomePage";
+import MainLayout from "./layouts/MainLayout";
+import JobsPage from "./pages/jobsPage";
+import NotFound from "./components/NotFound";
+import Slug from "./pages/slug";
+const router = createBrowserRouter(
+  createRoutesFromElements(
+    <Route path="/" element = {<MainLayout/>}>
+       <Route index element = {<Homepage/>}/>
+       <Route path="/jobs" element= {<JobsPage/>}/>
+       <Route path="/jobs/:id" element = {<Slug/>}/>
+       <Route path="*" element ={<NotFound/>}/>
+    </Route>
 
   )
-}
+);
+const App = () =>{
+
+  return <RouterProvider router= {router}/>
+};
 
 export default App;

@@ -1,5 +1,6 @@
 import React from 'react'
 import { useState } from 'react';
+import { Link } from 'react-router-dom';
 const JobLists = ({job}) => {
   const [showFulldetails, setShowFullDetails] = useState(false)
   let detail = job.details
@@ -19,7 +20,7 @@ const JobLists = ({job}) => {
  <p className="my-4 text-sm font-thin text-justify">{detail} <span onClick={()=>setShowFullDetails((prev)=>(!prev))} className='cursor-pointer text-indigo-500 font-semibold'>{showFulldetails ? "less" : "more" }</span></p>
                 <p className="mb-4 text-indigo-700">{job.tech_stack.join(" ")}</p>
 
-                <button className="bg-white w-full p-2 rounded-2xl mt-3">Read More</button>
+                <Link to ={`/jobs/${job.id}`} className="bg-white w-full p-2 rounded-2xl mt-3"> Read More </Link>
 
                 </div>
     </div>
