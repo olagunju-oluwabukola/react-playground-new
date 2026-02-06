@@ -12,7 +12,6 @@ const Slug = () => {
             try{
                 const res = await fetch(`/api/jobs/${id}`)
                 const data = await res.json()
-
                 setJob(data);
             } catch (error){
                 console.log(error)
@@ -22,8 +21,8 @@ const Slug = () => {
             }
         }
         fetchJobs();
-    }, [])
-  return loading ? <Spinners/> : (<h1>{job.role}</h1>)
+    }, [id])
+  return loading ? <Spinners/> : (<h1>{job?.role}</h1>)
 }
 
 export default Slug
