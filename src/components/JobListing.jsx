@@ -29,6 +29,7 @@ const JobList = ({isHome = false}) => {
       <div>
          <div className='text-4xl text-center my-16 font-bold'>{isHome ? 'Browse Available Roles' : " All Roles"}</div>
         <div className="">
+
           {loading ? (<Spinners loading = {loading} />) :(<div className="mt-20 grid gap-10 md:grid-cols-2 lg:grid-cols-4">
              {jobListing.map((job) =>(
             <JobLists job={job} key={job.id} />
