@@ -3,8 +3,9 @@ const State = () =>{
     const [count, setCount] = useState(0)
     const [theme, setTheme] = useState("blue")
     const [isOn, setIsOn] = useState(false)
-    const [Text, setText] = useState("")
+    const [text, setText] = useState("")
     const [colors, setColors] = useState({r:0, g:0, b:0})
+
 
     const toogleLight = () => {
         setIsOn(!isOn)
@@ -20,9 +21,9 @@ const State = () =>{
     return(
         <>
 
-        <div>
-            <h1 className="my-5">{ isOn? "light on💡" : "light off🌑"}</h1>
-            <button onClick={toogleLight} className=" text-white p-2 rounded-2xl" style={{background: isOn?"yellow":"red"}}> { isOn ? "Turn off" : "Turn on"}</button>
+        <div className="my-10">
+           <h1 className="font-bold capitalize">light status: {isOn ? "light on": "light off"}</h1>
+           <button className="text-white p-2 rounded-2xl font-bold mt-2" onClick={toogleLight} style={{backgroundColor: `${isOn ? 'red' : 'blue'}`}}> {isOn ? "Turn off": "Turn on"}</button>
         </div>
        <div className="text-2xl font-bold my-10">
         <h1>count = {count}</h1>
@@ -33,13 +34,17 @@ const State = () =>{
        </div>
        </div>
 
-       <div>
-        <input type="text"
-        value={Text}
-        onChange={(e)=> setText(e.target.value)}
-        className="border p-2 rounded-2xl" />
-        <h1 className="font-bold py-4">Output: {Text}</h1>
-       </div>
+<div className="my-10">
+    <label htmlFor="input" className="font-bold text-2xl text-amber-400">Input: </label>
+    <input type="text"
+    id="text"
+    value={text}
+    onChange={(e)=>setText(e.target.value)}
+    className="border-5  p-4 rounded-2xl border-amber-200 outline-none  "
+    />
+
+    <h1 className="font-bold text-2xl">Text: {text}</h1>
+</div>
 
        <div>
         <h1 className="h-40 w-40" style={{backgroundColor: `rgb(${colors.r}, ${colors.g}, ${colors.b})`}}>RGB Display</h1>
