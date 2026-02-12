@@ -5,6 +5,7 @@ import JobList from "../components/JobListing";
 import ViewAllJobs from "../components/ViewAllJobs";
 import State from "../components/state";
 import Forms from "../components/forms";
+import Filter from "../components/filter";
 const Homepage = () => {
     return (
 <div className="m-10">
@@ -16,6 +17,7 @@ const Homepage = () => {
 <JobList isHome= {true} />
 <ViewAllJobs/>
 <Forms/>
+<Filter/>
         </div>
     )
 }
